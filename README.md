@@ -24,4 +24,4 @@ I utilized a seed class to pull the data from the .csv and add it to the databas
 
 ## Things I Would've Done Differently (When Hindsight Is 20/20)
 
-After recording and watching the video back, I mentioned that I didn't fully implement CRUD functionality due to the lack of an ID for each of the products. After recording, I added "table->id();" to the create_products_table so that MySQL would auto-increment the ID and use it as a primary key for each product that was added. With the ability to specifically target a product by ID now, this would allow me to create functions to facilitate updating, and deleting via the API. 
+After recording and watching the video back, I mentioned that I didn't fully implement CRUD functionality due to the lack of an ID for each of the products. After recording, I added "$table->id();" to the create_products_table within the up() function, so that MySQL would auto-increment the ID and use it as a primary key for each product that was added. With the ability to specifically target a product by ID now, this would allow me to create functions to facilitate updating, and deleting via the API. 
