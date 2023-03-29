@@ -20,5 +20,5 @@ One of my favorite things about Laravel is the ability to model tables for a dat
 
 5) Running the ProductSeeder -
 
-I utilized a seed class to pull the data from the .csv and add it to the database. In order to run this, we just need to execute "php artisan db:seed --class=ProductSeeder" in Terminal. This will import all of the data required. If successfully, refreshing the localhost page should now show all of the categories and products that were added on the front-end!
+I utilized a seed class to pull the data from the .csv and add it to the database. In order to run this, we just need to execute "php artisan db:seed --class=ProductSeeder" in Terminal. This will import all of the data out of the .csv and into our products table. Refreshing the localhost page in our browser should now show all of the categories and products that were added on the front-end!
 
