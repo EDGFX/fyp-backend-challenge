@@ -22,3 +22,6 @@ One of my favorite things about Laravel is the ability to model tables for a dat
 
 I utilized a seed class to pull the data from the .csv and add it to the database. In order to run this, we just need to execute "php artisan db:seed --class=ProductSeeder" in Terminal. This will import all of the data out of the .csv and into our products table. Refreshing the localhost page in our browser should now show all of the categories and products that were added on the front-end!
 
+## Things I Would've Done Differently (When Hindsight Is 20/20)
+
+After recording and watching the video back, I mentioned that I didn't fully implement CRUD functionality due to the lack of an ID for each of the products. After recording, I added "table->id();" to the create_products_table so that MySQL would auto-increment the ID and use it as a primary key for each product that was added. With the ability to specifically target a product by ID now, this would allow me to create functions to facilitate updating, and deleting via the API. 
